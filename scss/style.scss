@@ -1,0 +1,252 @@
+// VARIABLES
+$Pink: #f6615f; 
+$lightGrey: #f5f5f5;
+
+$Text:'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+$Title: mel02, Helvetica, sans-serif;
+
+$deviceSmall: "screen and (min-width : 320px)";
+$deviceMedium: "screen and (min-width : 750px)";
+$deviceLarge: "screen and (min-width : 1200px)";
+
+$autoMargin: 0 auto;
+
+//TYPOGRAPHY
+@font-face {
+    font-family: mel02;
+    src: url('../assets/Mel02-Regular.ttf');
+}
+@mixin headerPink {
+    font-family: $Title;
+    color: $Pink;
+}
+@mixin center {
+    margin: $autoMargin;
+    left: 0;
+    right: 0;   
+}
+p, button, a, h4{
+    font-family: $Text;
+}
+
+//OVERALL PAGE SIZE
+*{
+    box-sizing: border-box;
+}
+body, html{
+    width: 100vw;
+    top:0;
+    bottom:0;
+    @include center();
+    background-color: $lightGrey
+}
+
+// Nav Header  
+#headerDiv{
+    font-family:  $Title;
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 100%;
+    max-height: 40vh;
+}
+#headerLeft{
+    width: 40%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr .7fr;
+    justify-items: center;
+}
+#headerRight{
+    width: 40%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+#headerLogo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+#headerLogo img{
+    height: 100%;
+    width: auto;
+    @include center();
+    }
+#igTag{
+    display: block;
+    margin: $autoMargin;
+    right: 0;
+    transform: translate(50% , 50%);}
+
+// Slpash Header and footer
+@mixin splashBackground {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 0;
+    margin: 0;
+ }
+#splashHeader{
+   background-image: url('../assets/splashHeader.png');
+   @include splashBackground();
+   height: 5rem;
+}
+#homeLink{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2rem 2rem 0 0 ;
+    margin: $autoMargin;
+    width: auto;
+    border: none;
+}
+footer{
+    background-image: url('../assets/footerBackground.png');
+    @include splashBackground();
+    @include headerPink();
+    height: 4.5rem;
+    p{
+    transform: translate(2rem,45px);
+    font-size: .7rem;    
+    }
+}
+
+//Search Bar
+#searchBarDiv{
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    transform: translateY(-25px);
+}
+#search{
+    flex: 1 1 auto;
+    margin: 0;
+    padding: .2rem .5rem;
+    border: 1px solid darkgray;
+    box-shadow: none;
+    height: 100%;
+    border-radius: 26px;
+}
+#searchIcon{
+    position: absolute;
+    transform: translate(-30px, 1px);
+}
+
+//Description Div 
+#descriptionDiv{
+    background-color: black;
+    padding: 1rem;
+    width: 100%;
+}
+#descriptionTxt{
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+
+
+//Page title
+#title{
+    padding: .5rem 0 0 0;
+    text-align: center;
+    font-family: $Title;
+}
+
+
+//Featured Project Layout 
+main{
+    height: auto;
+    display: block;
+}
+h1, a{
+    font-family:  $Title;
+}
+.latest
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.alignment1
+{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: $autoMargin;
+}
+
+.roundImage
+{
+    display: inline-block;
+    width: 100%;
+    height: 115%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.projectPreview
+{
+    position: relative;
+    width: 30%;
+    padding: 2rem;
+}
+
+h3
+{
+    height: 1rem;
+    margin: $autoMargin;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+}
+.ontop
+{
+    position: absolute;
+    bottom: 50%;
+    @include center();
+    z-index: 2;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+#seeMore{
+    display: block;
+    margin: .5rem auto;
+    left:0; right: 0;
+    padding: .5rem;
+    width: auto;
+    border-radius: 6px;
+    background-color: $Pink;
+
+}
+
+//hover animation of text fading in 
+.projectPreview:hover .ontop{
+    opacity: 1;
+}
+.projectPreview:hover img{
+    opacity: .5;
+}
+
+//404 page styles
+#contentDiv404{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    background-image: url('../assets/splash.png');
+    background-size: auto 110%;
+    background-repeat: no-repeat;
+    background-position-x: 130%; 
+}
+#div404A{
+    width: 40vw;
+}
+#div404B{
+    width: 60vw;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    max-width: 46ch;
+}
