@@ -21,6 +21,10 @@ h6 {
   font-weight: 500;
   color: #f6615f; }
 
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: inherit; }
+
 .italics {
   font-style: italic; }
 
@@ -50,6 +54,7 @@ ol {
 
 body, html {
   width: 100vw;
+  max-width: 1200px;
   top: 0;
   bottom: 0;
   margin: 0 auto;
@@ -69,6 +74,8 @@ body, html {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr .7fr;
   justify-items: center; }
+  #headerLeft a::hover {
+    background-image: url("assets/splash.png"); }
 
 #headerRight {
   width: 40%;
@@ -98,10 +105,12 @@ body, html {
   background-image: url("../assets/splashHeader.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position-y: -40px;
   width: 100%;
   top: 0;
   margin: 0;
-  height: 5rem; }
+  height: 5rem;
+  overflow: visible; }
 
 #homeLink {
   font-family: mel02, Helvetica, sans-serif;
@@ -118,6 +127,7 @@ footer {
   background-image: url("../assets/footerBackground.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position-y: -40px;
   width: 100%;
   top: 0;
   margin: 0;
@@ -125,8 +135,7 @@ footer {
   color: #f6615f;
   height: 4.5rem; }
   footer p {
-    transform: translate(2rem, 45px);
-    font-size: .7rem; }
+    transform: translate(2rem, 25px); }
 
 #searchBarDiv {
   display: flex;
@@ -184,9 +193,9 @@ main {
   .projectPreview .roundImage {
     display: inline-block;
     width: 100%;
-    height: 115%;
+    height: 100%;
     border-radius: 50%;
-    border: 1px solid black; }
+    box-shadow: 5px 5px 10px #EEEEEE; }
   .projectPreview .ontop {
     position: absolute;
     bottom: 50%;

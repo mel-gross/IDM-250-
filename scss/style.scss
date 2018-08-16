@@ -65,6 +65,11 @@ h6{
     width: auto;
     border: none;
 }
+a, a:hover, a:active, a:visited{
+    text-decoration: none;
+    color: inherit;
+
+}
 .italics{
     font-style: italic;
 }
@@ -88,6 +93,7 @@ ol{
 }
 body, html{
     width: 100vw;
+    max-width: 1200px;
     top:0;
     bottom:0;
     @include center();
@@ -126,6 +132,9 @@ body, html{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr .7fr;
     justify-items: center;
+    a::hover{
+        background-image: url('assets/splash.png');
+    }
 }
 #headerRight{
     width: 40%;
@@ -153,6 +162,7 @@ body, html{
 @mixin splashBackground {
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position-y: -40px;
     width: 100%;
     top: 0;
     margin: 0;
@@ -161,6 +171,7 @@ body, html{
    background-image: url('../assets/splashHeader.png');
    @include splashBackground();
    height: 5rem;
+   overflow: visible;
 }
 #homeLink{
     @include homeLink();
@@ -171,8 +182,7 @@ footer{
     @include headerPink();
     height: 4.5rem;
     p{
-    transform: translate(2rem,45px);
-    font-size: .7rem;    
+    transform: translate(2rem,25px);  
     }
 }
 
@@ -245,9 +255,9 @@ main{
     {
         display: inline-block;
         width: 100%;
-        height: 115%;
+        height: 100%;
         border-radius: 50%;
-        border: 1px solid black;
+        box-shadow: 5px 5px 10px $Shadow;
     }
     .ontop
     {

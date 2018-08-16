@@ -9,36 +9,36 @@
         <!--SHOWCASE LATEST 3 featured PROJECTS-->
         <div class="alignment1">
             <div class="projectPreview">
-                <img src="assets/jobs/npc_cover.jpg" alt="placeholder" class="roundImage">
-                <h3 class="ontop"> PROJECT TITLE</h3>
+                <img src="assets/projects/leapFeat.png" alt="placeholder" class="roundImage">
+                <h3 class="ontop">WEB DESIGN</h3>
             </div>
             <div class="projectPreview">
-                <img src="assets/jobs/paintbar_cover.jpeg" alt="placeholder" class="roundImage">
-                <h3 class="ontop"> PROJECT TITLE</h3>
+                <img src="assets/projects/zanshinFeat.png" alt="placeholder" class="roundImage">
+                <h3 class="ontop">LOGO DESIGN</h3>
             </div>
 
             <div class="projectPreview">
-                <img src="assets/jobs/zanshin_cover.jpg" alt="placeholder" class="roundImage">
-                <h3 class="ontop"> PROJECT TITLE</h3>
+                <img src="assets/projects/npcFeat.png" alt="placeholder" class="roundImage">
+                <h3 class="ontop">WEB DESIGN</h3>
             </div>
         </div>
         <div class="alignment1">
             <div class="projectPreview">
-                <img src="assets/jobs/npc_cover.jpg" alt="placeholder" class="roundImage">
-                <h3 class="ontop"> PROJECT TITLE</h3>
+                <img src="assets/projects/panoramaFeat.png" alt="placeholder" class="roundImage">
+                <h3 class="ontop">WEB DESIGN</h3>
             </div>
             <div class="projectPreview">
-                <img src="assets/jobs/paintbar_cover.jpeg" alt="placeholder" class="roundImage">
-                <h3 class="ontop"> PROJECT TITLE</h3>
+                <img src="assets/projects/paintbarFeat.png" alt="placeholder" class="roundImage">
+                <h3 class="ontop">VIDEO PRODUCTION</h3>
             </div>
 
             <div class="projectPreview">
-                <img src="assets/jobs/zanshin_cover.jpg" alt="placeholder" class="roundImage">
-                <h3 class="ontop"> PROJECT TITLE</h3>
+                <img src="assets/projects/zodiacFeat.png" alt="placeholder" class="roundImage">
+                <h3 class="ontop">WEB DESIGN</h3>
             </div>
         </div>
         <!--end of center-->
-        <button id="seeMore">See more</button>
+        <button id="seeMore"><a href="archive.php">SEE MORE PROJECTS </a></button>
     </div>
     <!-- end of latest featured -->
 

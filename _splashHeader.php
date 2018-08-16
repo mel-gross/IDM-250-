@@ -12,7 +12,7 @@
 
 <body>
     <header id="splashHeader">
-       <a id="homeLink" href="melgross.net" class="link">MEL<br>GROSS</a>
+       <a id="homeLink" href="index.php" class="link"><h3>MEL<br>GROSS</h3></a>
        <div id="searchBarDiv">
         <form action="search.php">
             <input type="search" results=5 id="search" placeholder="Search..." />
