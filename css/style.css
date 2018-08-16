@@ -1,8 +1,49 @@
 @font-face {
   font-family: mel02;
   src: url("../assets/Mel02-Regular.ttf"); }
-p, button, a, h4 {
+h1, h2, h3, button {
+  font-family: mel02, Helvetica, sans-serif; }
+
+p, h4, h5, h6 {
   font-family: "Franklin Gothic Book", "Arial Narrow", Arial, sans-serif; }
+
+h3 {
+  font-size: 1rem; }
+
+h5, h4 {
+  padding: 0 0 0 .5rem;
+  margin: 1rem;
+  font-weight: 600; }
+
+h6 {
+  padding: 0 0 0 .5rem;
+  margin: 1rem;
+  font-weight: 500;
+  color: #f6615f; }
+
+.italics {
+  font-style: italic; }
+
+ul {
+  list-style: none; }
+  ul li::before {
+    content: "\2022";
+    color: #f6615f;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
+
+ol {
+  list-style: none;
+  counter-reset: li; }
+  ol li {
+    counter-increment: li; }
+  ol li::before {
+    content: counter(li);
+    color: #f6615f;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
 
 * {
   box-sizing: border-box; }
@@ -63,6 +104,9 @@ body, html {
   height: 5rem; }
 
 #homeLink {
+  font-family: mel02, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
   display: flex;
   justify-content: flex-end;
   padding: 1.2rem 2rem 0 0;
@@ -122,9 +166,6 @@ main {
   height: auto;
   display: block; }
 
-h1, a {
-  font-family: mel02, Helvetica, sans-serif; }
-
 .latest {
   width: 100%;
   height: auto;
@@ -136,37 +177,29 @@ h1, a {
   width: 80%;
   margin: 0 auto; }
 
-.roundImage {
-  display: inline-block;
-  width: 100%;
-  height: 115%;
-  border-radius: 50%;
-  border: 1px solid black; }
-
 .projectPreview {
   position: relative;
   width: 30%;
   padding: 2rem; }
-
-h3 {
-  height: 1rem;
-  margin: 0 auto;
-  text-align: center; }
-
-a {
-  text-decoration: none;
-  color: black;
-  border: 1px solid black; }
-
-.ontop {
-  position: absolute;
-  bottom: 50%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  opacity: 0;
-  transition: .5s ease; }
+  .projectPreview .roundImage {
+    display: inline-block;
+    width: 100%;
+    height: 115%;
+    border-radius: 50%;
+    border: 1px solid black; }
+  .projectPreview .ontop {
+    position: absolute;
+    bottom: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: .5s ease; }
+  .projectPreview h3 {
+    height: 1rem;
+    margin: 0 auto;
+    text-align: center; }
 
 #seeMore {
   display: block;
@@ -203,5 +236,61 @@ a {
   bottom: 0;
   padding: 1rem;
   max-width: 46ch; }
+
+#projectMainDiv {
+  width: 80%;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  box-shadow: 2px 2px 5px #EEEEEE;
+  padding: 1rem 1rem; }
+  #projectMainDiv h1 {
+    margin: .5rem; }
+  #projectMainDiv h2 {
+    color: #f6615f; }
+  #projectMainDiv p {
+    max-width: 50ch;
+    margin: 0 1.5rem; }
+  #projectMainDiv button {
+    display: block;
+    margin: .5rem auto;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    width: auto;
+    border-radius: 6px;
+    margin-top: 1rem;
+    background-color: #f6615f; }
+  #projectMainDiv a {
+    font-family: "Franklin Gothic Book", "Arial Narrow", Arial, sans-serif;
+    text-decoration: none;
+    color: #f6615f; }
+
+#tabDiv {
+  background-color: #f6615f;
+  height: 10px;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-top: 2.5rem; }
+
+#tab {
+  height: 3rem;
+  position: absolute;
+  right: 1rem;
+  background-color: #f6615f;
+  border-radius: 6px;
+  transform: translateY(-35px); }
+  #tab h3 {
+    transform: translateY(-5px);
+    padding: 0 1rem; }
+
+.projectHeader img {
+  box-shadow: 2px 2px 5px #EEEEEE;
+  padding: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
