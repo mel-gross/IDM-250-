@@ -12,42 +12,8 @@
 
     <h1 style="padding-left: 3rem;">MY LATEST PROJECTS</h1>
 
-    <div class="latest" id="featured">
-        <!--SHOWCASE LATEST 3 featured PROJECTS-->
-        <div class="alignment1">
-            <div class="projectPreview">
-                <img src="assets/projects/leapFeat.png" alt="placeholder" class="roundImage">
-                <h3 class="ontop">WEB DESIGN</h3>
-            </div>
-            <div class="projectPreview">
-                <img src="assets/projects/zanshinFeat.png" alt="placeholder" class="roundImage">
-                <h3 class="ontop">LOGO DESIGN</h3>
-            </div>
-
-            <div class="projectPreview">
-                <img src="assets/projects/npcFeat.png" alt="placeholder" class="roundImage">
-                <h3 class="ontop">WEB DESIGN</h3>
-            </div>
-        </div>
-        <div class="alignment1">
-            <div class="projectPreview">
-                <img src="assets/projects/panoramaFeat.png" alt="placeholder" class="roundImage">
-                <h3 class="ontop">WEB DESIGN</h3>
-            </div>
-            <div class="projectPreview">
-                <img src="assets/projects/paintbarFeat.png" alt="placeholder" class="roundImage">
-                <h3 class="ontop">VIDEO PRODUCTION</h3>
-            </div>
-
-            <div class="projectPreview">
-                <img src="assets/projects/zodiacFeat.png" alt="placeholder" class="roundImage">
-                <h3 class="ontop">WEB DESIGN</h3>
-            </div>
-        </div>
-        <!--end of center-->
-        <button id="seeMore"><a href="archive.php">SEE MORE PROJECTS </a></button>
-    </div>
-    <!-- end of latest featured -->
+    <?php include '_archive.php' ; ?>
+    
 </main>
 
 <?php include '_footer.php'; ?>

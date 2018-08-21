@@ -54,7 +54,7 @@ ol {
 
 body, html {
   width: 100vw;
-  max-width: 1200px;
+  max-width: 1000px;
   top: 0;
   bottom: 0;
   margin: 0 auto;
@@ -63,6 +63,7 @@ body, html {
   background-color: #f5f5f5; }
 
 #headerDiv {
+  position: relative;
   font-family: mel02, Helvetica, sans-serif;
   display: flex;
   flex-flow: row nowrap;
@@ -101,6 +102,38 @@ body, html {
   right: 0;
   transform: translate(50%, 50%); }
 
+@media screen and (max-width: 512px) {
+  #headerDiv {
+    flex-flow: column nowrap;
+    max-height: 100vh; }
+
+  #headerLogo {
+    float: left;
+    position: absolute;
+    height: 100%; }
+
+  #headerLeft, #headerRight {
+    display: block;
+    margin: 0 auto;
+    transform: translateX(115px);
+    text-align: right; }
+
+  #headerLeft {
+    transform: translateY(140px); }
+
+  #headerRight {
+    transform: translateY(-225px); } }
+@media screen and (max-width: 450px) {
+  #headerLeft, #headerRight {
+    margin: 0;
+    transform: translateX(80px);
+    text-align: right; }
+
+  #headerLeft {
+    transform: translateY(140px); }
+
+  #headerRight {
+    transform: translateY(-225px); } }
 #splashHeader {
   background-image: url("../assets/splashHeader.png");
   background-size: 100%;
@@ -118,11 +151,20 @@ body, html {
   color: black;
   display: flex;
   justify-content: flex-end;
-  padding: 1.2rem 2rem 0 0;
-  margin: 0 auto;
+  padding: 1% 10% 0 0;
   width: auto;
   border: none; }
+  #homeLink h3 {
+    margin: 0; }
 
+@media screen and (max-width: 850px) {
+  #homeLink {
+    padding: 1% 7% 0 0; }
+    #homeLink h3 {
+      font-size: .9rem; }
+
+  #splashHeader {
+    background-position-y: -20px; } }
 footer {
   background-image: url("../assets/footerBackground.png");
   background-size: 100%;
@@ -157,6 +199,7 @@ footer {
   transform: translate(-30px, 1px); }
 
 #descriptionDiv {
+  position: relative;
   background-color: black;
   padding: 1rem;
   width: 100%; }
@@ -219,6 +262,9 @@ main {
   width: auto;
   border-radius: 6px;
   background-color: #f6615f; }
+  #seeMore:hover {
+    background: white;
+    border: 1px solid #a1a1a1; }
 
 .projectPreview:hover .ontop {
   opacity: 1; }
@@ -272,6 +318,9 @@ main {
     border-radius: 6px;
     margin-top: 1rem;
     background-color: #f6615f; }
+    #projectMainDiv button:hover {
+      background: white;
+      border: 1px solid #a1a1a1; }
   #projectMainDiv a {
     font-family: "Franklin Gothic Book", "Arial Narrow", Arial, sans-serif;
     text-decoration: none;
