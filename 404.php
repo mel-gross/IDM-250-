@@ -10,3 +10,5 @@
 
 </body>
 </html>
+
+<?php include '_footer.php' ; ?>

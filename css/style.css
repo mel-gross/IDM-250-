@@ -1,16 +1,23 @@
 @font-face {
   font-family: mel02;
   src: url("../assets/Mel02-Regular.ttf"); }
-h1, h2, h3, button {
+h1,
+h2,
+h3,
+button {
   font-family: mel02, Helvetica, sans-serif; }
 
-p, h4, h5, h6 {
+p,
+h4,
+h5,
+h6 {
   font-family: "Franklin Gothic Book", "Arial Narrow", Arial, sans-serif; }
 
 h3 {
   font-size: 1rem; }
 
-h5, h4 {
+h5,
+h4 {
   padding: 0 0 0 .5rem;
   margin: 1rem;
   font-weight: 600; }
@@ -21,7 +28,10 @@ h6 {
   font-weight: 500;
   color: #f6615f; }
 
-a, a:hover, a:active, a:visited {
+a,
+a:hover,
+a:active,
+a:visited {
   text-decoration: none;
   color: inherit; }
 
@@ -52,7 +62,8 @@ ol {
 * {
   box-sizing: border-box; }
 
-body, html {
+body,
+html {
   width: 100vw;
   max-width: 1000px;
   top: 0;
@@ -61,6 +72,17 @@ body, html {
   left: 0;
   right: 0;
   background-color: #f5f5f5; }
+
+button {
+  display: block;
+  margin: .5rem auto;
+  left: 0;
+  right: 0;
+  padding: .5rem;
+  width: auto;
+  border-radius: 6px;
+  background: white;
+  border: 1px solid #a1a1a1; }
 
 #headerDiv {
   position: relative;
@@ -92,6 +114,7 @@ body, html {
 #headerLogo img {
   height: 100%;
   width: auto;
+  object-fit: scale-down;
   margin: 0 auto;
   left: 0;
   right: 0; }
@@ -100,7 +123,11 @@ body, html {
   display: block;
   margin: 0 auto;
   right: 0;
-  transform: translate(50%, 50%); }
+  transform: translate(50%, 50%);
+  -webkit-transform: translate(50%, 50%);
+  -moz-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  -o-transform: translate(50%, 50%); }
 
 @media screen and (max-width: 512px) {
   #headerDiv {
@@ -112,28 +139,55 @@ body, html {
     position: absolute;
     height: 100%; }
 
-  #headerLeft, #headerRight {
+  #headerLeft,
+  #headerRight {
     display: block;
     margin: 0 auto;
     transform: translateX(115px);
-    text-align: right; }
+    text-align: right;
+    -webkit-transform: translateX(115px);
+    -moz-transform: translateX(115px);
+    -ms-transform: translateX(115px);
+    -o-transform: translateX(115px); }
 
   #headerLeft {
-    transform: translateY(140px); }
+    transform: translateY(140px);
+    -webkit-transform: translateY(140px);
+    -moz-transform: translateY(140px);
+    -ms-transform: translateY(140px);
+    -o-transform: translateY(140px); }
 
   #headerRight {
-    transform: translateY(-225px); } }
+    transform: translateY(-225px);
+    -webkit-transform: translateY(-225px);
+    -moz-transform: translateY(-225px);
+    -ms-transform: translateY(-225px);
+    -o-transform: translateY(-225px); } }
 @media screen and (max-width: 450px) {
-  #headerLeft, #headerRight {
-    margin: 0;
+  #headerLeft,
+  #headerRight {
+    display: block;
+    margin: 0 auto;
     transform: translateX(80px);
-    text-align: right; }
+    text-align: right;
+    -webkit-transform: translateX(80px);
+    -moz-transform: translateX(80px);
+    -ms-transform: translateX(80px);
+    -o-transform: translateX(80px); }
 
   #headerLeft {
-    transform: translateY(140px); }
+    transform: translateY(140px);
+    -webkit-transform: translateY(140px);
+    -moz-transform: translateY(140px);
+    -ms-transform: translateY(140px);
+    -o-transform: translateY(140px); }
 
   #headerRight {
-    transform: translateY(-225px); } }
+    transform: translateY(-225px);
+    -webkit-transform: translateY(-225px);
+    -moz-transform: translateY(-225px);
+    -ms-transform: translateY(-225px);
+    -o-transform: translateY(-225px); } }
 #splashHeader {
   background-image: url("../assets/splashHeader.png");
   background-size: 100%;
@@ -153,7 +207,8 @@ body, html {
   justify-content: flex-end;
   padding: 1% 10% 0 0;
   width: auto;
-  border: none; }
+  border: none;
+  pointer-events: all; }
   #homeLink h3 {
     margin: 0; }
 
@@ -177,13 +232,22 @@ footer {
   color: #f6615f;
   height: 4.5rem; }
   footer p {
-    transform: translate(2rem, 25px); }
+    transform: translate(2rem, 25px);
+    -webkit-transform: translate(2rem, 25px);
+    -moz-transform: translate(2rem, 25px);
+    -ms-transform: translate(2rem, 25px);
+    -o-transform: translate(2rem, 25px); }
 
 #searchBarDiv {
+  pointer-events: none;
   display: flex;
   justify-content: space-around;
   padding: .5rem;
-  transform: translateY(-25px); }
+  transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+  -moz-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  -o-transform: translateY(-25px); }
 
 #search {
   flex: 1 1 auto;
@@ -196,7 +260,11 @@ footer {
 
 #searchIcon {
   position: absolute;
-  transform: translate(-30px, 1px); }
+  transform: translate(-30px, 1px);
+  -webkit-transform: translate(-30px, 1px);
+  -moz-transform: translate(-30px, 1px);
+  -ms-transform: translate(-30px, 1px);
+  -o-transform: translate(-30px, 1px); }
 
 #descriptionDiv {
   position: relative;
@@ -239,7 +307,7 @@ main {
     height: 100%;
     border-radius: 50%;
     box-shadow: 5px 5px 10px #EEEEEE; }
-  .projectPreview .ontop {
+  .projectPreview .onTop {
     position: absolute;
     bottom: 50%;
     margin: 0 auto;
@@ -247,7 +315,11 @@ main {
     right: 0;
     z-index: 2;
     opacity: 0;
-    transition: .5s ease; }
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease; }
   .projectPreview h3 {
     height: 1rem;
     margin: 0 auto;
@@ -266,7 +338,7 @@ main {
     background: white;
     border: 1px solid #a1a1a1; }
 
-.projectPreview:hover .ontop {
+.projectPreview:hover .onTop {
   opacity: 1; }
 
 .projectPreview:hover img {
@@ -277,20 +349,73 @@ main {
   display: flex;
   flex-flow: row nowrap;
   background-image: url("../assets/splash.png");
-  background-size: auto 110%;
+  background-size: auto 80%;
   background-repeat: no-repeat;
-  background-position-x: 130%; }
+  background-position: 100%, 50%; }
 
 #div404A {
-  width: 40vw; }
+  width: 30vw; }
 
 #div404B {
-  width: 60vw;
+  width: 70vw;
   margin: auto 0;
   top: 0;
   bottom: 0;
   padding: 1rem;
   max-width: 46ch; }
+
+#contentDivContact {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  background-image: url("../assets/splash.png");
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position: 100%, 50%; }
+
+#divContactA {
+  width: 30vw;
+  display: flex; }
+  #divContactA img {
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+
+#divContactB {
+  width: 70vw;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem; }
+
+#contactFlex {
+  display: flex;
+  justify-content: space-around; }
+
+#contentDivAbout {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  background-image: url("../assets/splash.png");
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position: 100%, 50%; }
+
+#divAboutA {
+  width: 30vw;
+  display: flex; }
+  #divAboutA img {
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+
+#divAboutB {
+  width: 70vw;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  max-width: 60ch; }
 
 #projectMainDiv {
   width: 80%;
@@ -342,10 +467,18 @@ main {
   right: 1rem;
   background-color: #f6615f;
   border-radius: 6px;
-  transform: translateY(-35px); }
+  transform: translateY(-35px);
+  -webkit-transform: translateY(-35px);
+  -moz-transform: translateY(-35px);
+  -ms-transform: translateY(-35px);
+  -o-transform: translateY(-35px); }
   #tab h3 {
+    padding: 0 1rem;
     transform: translateY(-5px);
-    padding: 0 1rem; }
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px); }
 
 .projectHeader img {
   box-shadow: 2px 2px 5px #EEEEEE;

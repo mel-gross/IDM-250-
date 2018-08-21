@@ -16,8 +16,8 @@
     <div id="headerDiv">
     <div id="headerLeft">
         <a href="https://www.etsy.com/shop/MelGrossShop?ref=seller-platform-mcnav"><h2>SHOP</h2></a>
-        <a href="404.php"><h2>ABOUT ME</h2></a>
-        <a href="404.php"><h2>CALL ME MAYBE</h2></a>
+        <a href="about.php"><h2>ABOUT ME</h2></a>
+        <a href="contact.php"><h2>CALL ME MAYBE</h2></a>
         <a href="https://www.instagram.com/melgross_art/?hl=en"><h3>@MELGROSS_ART</h3></a>
     </div>
     <div id="headerLogo">
