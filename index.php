@@ -1,4 +1,4 @@
-<?php include '_header.php'; ?>
+<?php include 'header.php'; ?>
 
 <main>
     <div id="descriptionDiv">
@@ -12,8 +12,8 @@
 
     <h1 style="padding-left: 3rem;">MY LATEST PROJECTS</h1>
 
-    <?php include '_archive.php' ; ?>
+    <?php include 'archive.php' ; ?>
     
 </main>
 
-<?php include '_footer.php'; ?>
+<?php include 'footer.php'; ?>

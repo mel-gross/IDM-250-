@@ -1,13 +1,36 @@
-<?php include '_splashHeader.php' ; ?>
+    <div class="latest" id="featured">
+        <!--SHOWCASE LATEST 3 featured PROJECTS-->
+        <div class="alignment1">
+            <div class="projectPreview">
+                <a href="project.php"><img src="assets/projects/leapFeat.png" alt="placeholder" class="roundImage"></a>
+                <h3 class="onTop">WEB DESIGN</h3>
+            </div>
+            <div class="projectPreview">
+                <a href="project.php"><img src="assets/projects/zanshinFeat.png" alt="placeholder" class="roundImage"></a>
+                <h3 class="onTop">LOGO DESIGN</h3>
+            </div>
 
-<main>
-    <div id="title">
-        <h1>BRANDING</h1>
-        <h5> FREELANCE AND UNIVERSITY PROJECTS </h3>
+            <div class="projectPreview">
+                <a href="project.php"><img src="assets/projects/npcFeat.png" alt="placeholder" class="roundImage"></a>
+                <h3 class="onTop">WEB DESIGN</h3>
+            </div>
+        </div>
+        <div class="alignment1">
+            <div class="projectPreview">
+                <a href="project.php"> <img src="assets/projects/panoramaFeat.png" alt="placeholder" class="roundImage"></a>
+                <h3 class="onTop">WEB DESIGN</h3>
+            </div>
+            <div class="projectPreview">
+                <a href="project.php"> <img src="assets/projects/paintbarFeat.png" alt="placeholder" class="roundImage"></a>
+                <h3 class="onTop">VIDEO PRODUCTION</h3>
+            </div>
+
+            <div class="projectPreview">
+                <a href="project.php"> <img src="assets/projects/zodiacFeat.png" alt="placeholder" class="roundImage"></a>
+                <h3 class="onTop">WEB DESIGN</h3>
+            </div>
+        </div>
+        <!--end of center-->
+       <a href="archive.php"> <button id="seeMore">SEE MORE PROJECTS</button></a>
     </div>
-
-<?php include '_archive.php' ; ?>
-
-</main>
-
-<?php include '_footer.php' ; ?>
+    <!-- end of latest featured -->

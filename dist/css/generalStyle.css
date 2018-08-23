@@ -1,0 +1,323 @@
+@font-face {
+  font-family: mel02;
+  src: url("../assets/Mel02-Regular.ttf"); }
+h1, h2, h3, button {
+  font-family: mel02, Helvetica, sans-serif; }
+
+p, h4, h5, h6 {
+  font-family: "Franklin Gothic Book", "Arial Narrow", Arial, sans-serif; }
+
+p, h6 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1.7rem; }
+
+h4 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h1 {
+  font-size: 3rem; }
+
+h5, h4 {
+  padding: 0 0 0 .5rem;
+  margin: 1rem;
+  font-weight: 600; }
+
+h6 {
+  padding: 0 0 0 .5rem;
+  margin: 1rem;
+  font-weight: 500;
+  color: #f6615f; }
+
+.italics {
+  font-style: italic; }
+
+ul {
+  font-size: 1.5rem;
+  list-style: none; }
+  ul li::before {
+    content: "\2022";
+    color: #f6615f;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
+
+ol {
+  font-size: 1.5rem;
+  list-style: none;
+  counter-reset: li; }
+  ol li {
+    counter-increment: li; }
+  ol li::before {
+    content: counter(li);
+    color: #f6615f;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
+
+* {
+  box-sizing: border-box; }
+
+body, html {
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background-color: #f5f5f5; }
+
+#splashHeader {
+  background-image: url("../assets/splashHeader.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  height: 5rem;
+  background-position-y: -40px; }
+
+#homeLink {
+  font-family: mel02, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.2rem 2rem 0 0;
+  margin: 0 auto;
+  width: auto;
+  border: none; }
+
+footer {
+  background-image: url("../assets/footerBackground.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  font-family: mel02, Helvetica, sans-serif;
+  color: #f6615f;
+  height: 4.5rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clear: both; }
+  footer p {
+    transform: translate(2rem, 45px);
+    font-size: .7rem; }
+
+#searchBarDiv {
+  display: flex;
+  justify-content: space-around;
+  padding: .5rem;
+  transform: translateY(-25px); }
+
+#search {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: .2rem .5rem;
+  border: 1px solid darkgray;
+  box-shadow: none;
+  height: 100%;
+  border-radius: 26px; }
+
+#searchIcon {
+  position: absolute;
+  transform: translate(-30px, 1px); }
+
+#backgroundSplashDiv {
+  transform: translate(-10%, -30%);
+  width: 100%;
+  padding: 2rem 0;
+  background-image: url("../assets/splash.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 100%, -20px; }
+  #backgroundSplashDiv #quoteDiv {
+    top: 0;
+    bottom: 0; }
+    #backgroundSplashDiv #quoteDiv #quoteContent {
+      margin: 0 1.5rem 0 auto;
+      max-width: 40ch;
+      text-align: right; }
+      #backgroundSplashDiv #quoteDiv #quoteContent #quoteTitle {
+        transform: translateX(-40px); }
+
+#buttonsDisplay {
+  padding: 1rem 0 0 0;
+  display: flex;
+  flex-flow: row wrap; }
+  #buttonsDisplay #but1 {
+    background-color: #f6615f;
+    display: block;
+    margin: .5rem auto;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    width: 80%;
+    border-radius: 6px; }
+  #buttonsDisplay #but2 {
+    background-color: #a1a1a1;
+    display: block;
+    margin: .5rem auto;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    width: 80%;
+    border-radius: 6px; }
+  #buttonsDisplay #but3 {
+    background-color: black;
+    color: white;
+    display: block;
+    margin: .5rem auto;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    width: 80%;
+    border-radius: 6px; }
+
+#buttonsDisplayWidg {
+  display: flex;
+  flex-flow: column wrap; }
+  #buttonsDisplayWidg #but1 {
+    background-color: #f6615f;
+    display: block;
+    margin: .5rem auto;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    width: 80%;
+    border-radius: 6px; }
+  #buttonsDisplayWidg #but2 {
+    background-color: #a1a1a1;
+    display: block;
+    margin: .5rem auto;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    width: 80%;
+    border-radius: 6px; }
+  #buttonsDisplayWidg #but3 {
+    background-color: black;
+    color: white;
+    display: block;
+    margin: .5rem auto;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    width: 80%;
+    border-radius: 6px; }
+
+.caption {
+  background-color: #f6615f;
+  color: white;
+  font-family: "Franklin Gothic Book", "Arial Narrow", Arial, sans-serif;
+  font-size: .7rem;
+  padding: 0 0 0 1rem; }
+
+/*#sideBarGrid{
+    display: grid;
+    grid-template-areas: left, right;
+}*/
+main {
+  transform: translateY(3rem); }
+
+#contentLeft {
+  width: 70%;
+  background-color: white;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  box-shadow: 2px 2px 5px #EEEEEE;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  float: left; }
+  #contentLeft p {
+    max-width: 70ch;
+    margin: 0 0 0 1rem; }
+
+#contentRight {
+  width: 25%;
+  float: right;
+  top: 0; }
+
+#tabDiv {
+  background-color: #f6615f;
+  height: 10px;
+  width: 70%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-top: 2.5rem;
+  margin: 0 1rem;
+  float: left; }
+
+#tab {
+  height: 3rem;
+  position: absolute;
+  background-color: #f6615f;
+  border-radius: 6px;
+  transform: translateY(-40px);
+  left: 2rem; }
+  #tab h3 {
+    transform: translateY(-5px);
+    padding: 0 1rem; }
+
+#alignment2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto; }
+
+.projectPreview {
+  position: relative;
+  width: 100%;
+  padding: 1rem; }
+  .projectPreview .roundImage {
+    display: relative;
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #EEEEEE; }
+  .projectPreview .ontop {
+    position: absolute;
+    bottom: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: .5s ease; }
+  .projectPreview h3 {
+    height: 1rem;
+    margin: 0 auto;
+    text-align: center; }
+
+#banner {
+  background-color: #a1a1a1;
+  width: 300px;
+  height: 300px;
+  padding: 25% 0 0 0;
+  text-align: center; }
+
+[class^="icon-btn"] {
+  height: 75px;
+  width: 75px;
+  border: 0;
+  font-size: 40px;
+  border-radius: 50px;
+  margin-left: 10px;
+  background-color: #a1a1a1; }
+
+/*# sourceMappingURL=generalStyle.css.map */
