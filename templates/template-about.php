@@ -1,8 +1,9 @@
-<?php include '_splashHeader.php' ; ?>
+<?php /* Template Name: About Template */ 
+ get_header(); ?>
 
 <main>
 <div id="contentDivAbout">
-    <div id="divAboutA"><img src="assets/MelGLogo.png" alt="Mel Gross Illustration"></div>
+    <div id="divAboutA"><img src="dist/assets/MelGLogo.png" alt="Mel Gross Illustration"></div>
     <div id="divAboutB">
         <h1>NICE TO MEET YOU!</h1>
         <p>

@@ -1,4 +1,5 @@
-<?php include '_splashHeaderGeneral.php' ; ?>
+<?php /* Template Name: Sidebar Template */ 
+get_header(); ?>
 <main id="sideBarGrid">
     <div id="tabDiv">
         <div id="tab">
@@ -181,5 +182,5 @@
 
     </div>
 </main>
-
-<?php include '_footer.php' ; ?>
+<?php
+get_footer();

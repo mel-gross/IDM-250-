@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
-            wp_nav_menu([
-                'theme_location'  => 'main',
-                'container'       => 'ul',
-                'menu_class'      => 'nav navbar-nav navbar-right',
-            ]);
-        ?>
 <head>
 <!-- Basic Page Needs
     ================================================== -->
@@ -20,8 +13,8 @@
 </head>
 
 <body>
-
-    <header>
+<?php if ( is_home() ) : ?>
+<header>
     <div id="headerDiv">
     <div id="headerLeft">
         <a href="https://www.etsy.com/shop/MelGrossShop?ref=seller-platform-mcnav"><h2>SHOP</h2></a>
@@ -30,7 +23,7 @@
         <a href="https://www.instagram.com/melgross_art/?hl=en"><h3>@MELGROSS_ART</h3></a>
     </div>
     <div id="headerLogo">
-       <img src="assets/MelGLogo.png" alt="Logo for Mel Gross"> 
+       <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/MelGLogo.png" alt="Logo for Mel Gross"> 
     </div>
     <div id="headerRight">
     <a href="archive.php"><h2>BRANDING</h2></a>
@@ -38,3 +31,20 @@
     <a href="archive.php"><h2>PHOTOGRAPHY</h2></a>
     </div></div>
     </header>
+
+<?php else: ?>
+<header id="splashHeader">
+       <a id="homeLink" href="melgross.net" class="link">MEL<br>GROSS</a>
+       <?php get_search_form(); ?>
+       
+    </header>
+<?php endif; ?>
+<?php 
+            wp_nav_menu([
+                'theme_location'  => 'main',
+                'container'       => 'ul',
+                'menu_class'      => 'nav navbar-nav navbar-right',
+            ]);
+        ?>
+
+    

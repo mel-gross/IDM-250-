@@ -1,4 +1,4 @@
-<?php /* Template Name: Custom General Template */ 
+<?php /* Template Name: Front-Page Template */ 
 $arg = [
   'post_type'     => 'post',
   'post_status'   => 'publish',
@@ -9,6 +9,14 @@ $posts = new WP_Query($arg);
 get_header(); ?>
 <!--blog body-->
 <main>
+<div id="descriptionDiv">
+        <p id="descriptionTxt">
+            Hey there! I'm a Brazilian-American Multimedia Designer, currently in Philadelphia. </br>
+            I am a creative professional with an ample toolkit that includes illustration, </br>
+            photography, web development and design, logo and brand design and video production.</br>
+            I create to empower small and personal brands through a close relationship with the client.</br>
+        </p>
+    </div>
   <div id="title">
     <h1>
       <?php the_title();?>

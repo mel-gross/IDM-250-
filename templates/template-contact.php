@@ -1,9 +1,10 @@
-<?php include '_splashHeader.php' ; ?>
+<?php /* Template Name: Contact Template */ 
+ get_header(); ?>
 
 <main>
     <div id="contentDivContact">
         <div id="divContactA">
-            <img src="assets/MelGLogo.png" alt="Mel Gross Illustration">
+            <img src="dist/assets/MelGLogo.png" alt="Mel Gross Illustration">
         </div>
         <div id="divContactB">
             <h1>CALL ME MAYBE!</h1>
